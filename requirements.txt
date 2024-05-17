@@ -1,0 +1,9 @@
+blitz==0.3.3
+blitz_bayesian_pytorch==0.2.8
+matplotlib==3.7.3
+numpy==1.24.4
+pandas==2.2.2
+scikit_learn==1.2.2
+scipy==1.11.3
+torch==2.1.0
+~atplotlib==3.8.0
