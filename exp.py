@@ -356,16 +356,16 @@ if __name__ == '__main__':
                         help='the name of the adversarial attack'
                              'options: [NVITA, FGSM, BIM, LBA]'
                              'for LBA, it will set 1VITA as the original attack')
-    parser.add_argument('-epsilon', type=float, required=True, help='the epsilon of the original attack')
+    parser.add_argument('--epsilon', type=float, required=True, help='the epsilon of the original attack')
 
     # parameters for the LBA attack, using when the attack is LBA
     parser.add_argument('--LBA_transfer_atk', action='store_true', default=False,
                         help='do the transferability test')
-    parser.add_argument('--LBA_ori_atk_load_from_csv', action='store_true', default=True,
+    parser.add_argument('--LBA_ori_atk_load_from_csv', action='store_true', default=False,
                         help='as LBA needs to learn the original attack, this flag is used to '
                              'load the original attack result from .csv to accelerate the process, '
                              'instead of running the original attack again.'
-                             'be the result file is existed.')
+                             'be sure the result file is existed.')
     parser.add_argument('--LBA_model_save', action='store_true', default=False, help='save the LBA model')
     parser.add_argument('--LBA_model_load_from_pkl', action='store_true', default=False,
                         help='load the LBA model from .pkl file, instead of training the model again')

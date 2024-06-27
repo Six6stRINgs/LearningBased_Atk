@@ -5,6 +5,7 @@ from scipy.optimize import differential_evolution
 class NVITA:
     """
     Time-series nVITA.
+    Repository: https://github.com/ProfiterolePuff/nvita
     """
 
     def __init__(self, n, eps, model, maxiter=60, tol=0.01, targeted=False) -> None:
